@@ -5,7 +5,7 @@ import uuid
 import os
 from io import BytesIO
 
-from src.components.transform_image import img_resizer_function
+from src.components.image.transform_image import img_resizer_function
 
 #APIRouter creates path operations for item module
 router = APIRouter(
@@ -24,7 +24,7 @@ async def create_upload_file(file: UploadFile = File(...)):
     the name of the first key:value is `file`, and is followed by the image 
     """
 
-    extension = file.filename.split(".")[-1] in ("jpg", "jpeg")
+    extension = file.filename.split(".")[-1] in ("jpg", "jpeg", "JPG", "JPEG")
 
     if not extension:
         return "Image must be jpg/jpeg format!"

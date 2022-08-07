@@ -1,3 +1,16 @@
-fastapi 
-uvicorn[standard]
-python-multipart
+fastapi                 #for fasi API framework
+uvicorn[standard]       #for fasi API framework
+python-multipart        #for fasi API framework
+
+ffmpeg-python           #for audui and picture processing modules 
+pydub                   #for audui and picture processing modules 
+
+scikit-image            #video cloning modules
+python_speech_features  #video cloning modules
+pyworld                 #video cloning modules
+pyyaml                  #video cloning modules
+pytorch-lightning       #video cloning modules
+imageio                 #video cloning modules
+scipy                   #video cloning modules
+pyworld                 #video cloning modules      
+opencv-python           #video cloning modules

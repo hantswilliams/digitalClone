@@ -6,12 +6,12 @@ from scipy.interpolate import interp1d
 import numpy as np
 import pyworld
 import torch
-from modules.audio2pose import get_pose_from_audio
+from src.components.video.modules.audio2pose import get_pose_from_audio
 from skimage import io, img_as_float32
 import cv2
-from modules.generator import OcclusionAwareGenerator
-from modules.keypoint_detector import KPDetector
-from modules.audio2kp import AudioModel3D
+from src.components.video.modules.generator import OcclusionAwareGenerator
+from src.components.video.modules.keypoint_detector import KPDetector
+from src.components.video.modules.audio2kp import AudioModel3D
 import yaml,os,imageio
 
 def draw_annotation_box( image, rotation_vector, translation_vector, color=(255, 255, 255), line_width=2):
@@ -238,13 +238,13 @@ def audio2head(audio_path, img_path, model_path, save_path):
     os.remove(video_path)
 
 
-theAudioPath = r"./demo/audio/clips/rajivClassrecordingOriginal2.wav"
-theImagePath = r"./demo/img/rajiv.jpg"
-theModelPath = r"./checkpoints/audio2head.pth.tar"
-theSavePath = r"./results"
+# theAudioPath = r"./demo/audio/clips/rajivClassrecordingOriginal2.wav"
+# theImagePath = r"./demo/img/rajiv.jpg"
+# theModelPath = r"./checkpoints/audio2head.pth.tar"
+# theSavePath = r"./results"
 
-print('about to do its thing....')
+# print('about to do its thing....')
 
-audio2head(theAudioPath,theImagePath,theModelPath,theSavePath)
+# audio2head(theAudioPath,theImagePath,theModelPath,theSavePath)
 
-print('done, its done its thing....')
+# print('done, its done its thing....')

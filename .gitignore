@@ -10,9 +10,8 @@ __pycache__/
 .DS_Store
 *.DS_Store
 
-# ignore files inside of checkpoints folder
-cloneVideo/checkpoints/audio2head.pth.tar
-cloneAudio/checkpoints/*.*
+# ignore files inside of checkpoints folder for video cloning
+fastApi/src/components/video/checkpoints/audio2head.pth.tar
 
 # Distribution / packaging
 .Python

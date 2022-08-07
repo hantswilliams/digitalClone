@@ -1,10 +1,10 @@
 from torch import nn
 import torch
 import torch.nn.functional as F
-from modules.util import AntiAliasInterpolation2d
-from modules.util import Hourglass3D
+from src.components.video.modules.util import AntiAliasInterpolation2d
+from src.components.video.modules.util import Hourglass3D
 
-from modules.util import gaussian2kp
+from src.components.video.modules.util import gaussian2kp
 from sync_batchnorm import SynchronizedBatchNorm2d as BatchNorm2d
 
 

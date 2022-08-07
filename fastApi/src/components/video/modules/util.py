@@ -3,9 +3,9 @@ from torch import nn
 import torch.nn.functional as F
 import torch
 
-from sync_batchnorm import SynchronizedBatchNorm2d as BatchNorm2d
-from sync_batchnorm import SynchronizedBatchNorm3d as BatchNorm3d
-from modules.resnet import resnet34
+from src.components.video.sync_batchnorm import SynchronizedBatchNorm2d as BatchNorm2d
+from src.components.video.sync_batchnorm import SynchronizedBatchNorm3d as BatchNorm3d
+from src.components.video.modules.resnet import resnet34
 
 def gaussian2kp(heatmap):
     """
