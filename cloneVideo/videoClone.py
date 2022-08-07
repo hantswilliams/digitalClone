@@ -238,13 +238,13 @@ def audio2head(audio_path, img_path, model_path, save_path):
     os.remove(video_path)
 
 
+theAudioPath = r"./demo/audio/clips/rajivClassrecordingOriginal2.wav"
+theImagePath = r"./demo/img/rajiv.jpg"
+theModelPath = r"./checkpoints/audio2head.pth.tar"
+theSavePath = r"./results"
 
-theAudioPath = 'insert here'
-theImagePath = 'insert here'
-theModelPath = 'insert here'
-theSavePath = 'insert here'
+print('about to do its thing....')
 
 audio2head(theAudioPath,theImagePath,theModelPath,theSavePath)
 
-
-print('done')
+print('done, its done its thing....')

@@ -10,6 +10,9 @@ __pycache__/
 .DS_Store
 *.DS_Store
 
+# ignore files inside of checkpoints folder
+cloneVideo/checkpoints/audio2head.pth.tar
+cloneAudio/checkpoints/*.*
 
 # Distribution / packaging
 .Python

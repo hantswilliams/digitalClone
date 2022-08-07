@@ -114,7 +114,6 @@ USE_CUDA = torch.cuda.is_available()
 # load the config
 C = load_config(CONFIG_PATH)
 
-
 # load the audio processor
 ap = AudioProcessor(**C.audio)
 
