@@ -5,7 +5,7 @@ from src.components.video.modules.util import AntiAliasInterpolation2d
 from src.components.video.modules.util import Hourglass3D
 
 from src.components.video.modules.util import gaussian2kp
-from sync_batchnorm import SynchronizedBatchNorm2d as BatchNorm2d
+from src.components.video.sync_batchnorm import SynchronizedBatchNorm2d as BatchNorm2d
 
 
 class AudioModel3D(nn.Module):

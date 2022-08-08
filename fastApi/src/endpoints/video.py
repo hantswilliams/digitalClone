@@ -28,14 +28,23 @@ async def create_upload_file(postItems: VideoModel):
     the name of the first key:value is `file`, and is followed by the image 
     """
 
-    model_path = './checkpoints/audio2head.pth.tar'
-    save_path = './results/'
+    # print current working directory
+    machineCwd = os.getcwd()
 
-    audio2head(postItems.audioFileLocation, postItems.imageFileLocation, model_path, save_path)
+    responseAudioFile = postItems.audioFileLocation 
+    responseImageFile = postItems.imageFileLocation
+
+    model_path = machineCwd + '/src/components/video/checkpoints/audio2head.pth.tar'
+    save_path = machineCwd + '/src/components/video/results'
+
+    responseAudioFile = machineCwd + '/files/transformed/audio/moded/' + responseAudioFile
+    responseImageFile = machineCwd + '/files/transformed/image/moded/' + responseImageFile
+
+    audio2head(responseAudioFile, responseImageFile, model_path, save_path)
 
     return {
         "modelInputs": {
-            "audio": postItems.audioFileLocation,
-            "image": postItems.imageFileLocation,
+            "audio": responseAudioFile,
+            "image": responseImageFile,
         }
     }

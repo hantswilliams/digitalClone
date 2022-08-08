@@ -1,9 +1,11 @@
-fastapi                 #for fasi API framework
-uvicorn[standard]       #for fasi API framework
-python-multipart        #for fasi API framework
+fastapi                 #for fast API framework
+uvicorn[standard]       #for fast API framework
+python-multipart        #for fast API framework
+gunicorn                #for fast API framework
 
 ffmpeg-python           #for audui and picture processing modules 
 pydub                   #for audui and picture processing modules 
+imageio-ffmpeg          #for audui and picture processing modules
 
 scikit-image            #video cloning modules
 python_speech_features  #video cloning modules
