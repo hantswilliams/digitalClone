@@ -42,4 +42,6 @@ service cloud.firestore {
     
     
 - building for vercel: 
-    - `insert here`
+    - login to vercel, link up github account - select `create react app` as the default react type for framework 
+    - everything else should work
+    - when deploying to vercel, after associating it with a domain, will need to add that domain into firebase-auth as a authorized domain for the login to work
