@@ -3,11 +3,17 @@
 */.pnp
 */.pnp.js
 
+# javascript stuff 
+*/package-lock.json
+./frontend/package-lock.json
+
 # testing
 */coverage
 
 # production
 */frontend/build
+
+
 
 # misc
 *.DS_Store

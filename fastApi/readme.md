@@ -5,6 +5,7 @@
 - or use the `startDev.sh` script 
 - can find interactive docs at `/docs` provided by swagger 
 - can find interactive docs at `/redoc` provided by ReDoc 
+- on local machine, currently using: `pyenv shell 3.8.6` environment 
 
 
 ## launching for 'production' purposes with gunicorn: 

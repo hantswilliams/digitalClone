@@ -1,3 +1,6 @@
+# non starter kit instructions 
+- https://github.com/sneas/react-nested-routes-example/blob/master/src/App.js was looking at nested routes, haven't figured out yet 
+
 # updated instructos that should be moved into the starter kit 
 
 - will use `VERCEL` later for deployment, not google hosting 
